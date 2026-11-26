@@ -1,0 +1,31 @@
+// GENERADO por scripts/estilos_visuales.py (python scripts/estilos_visuales.py ts). No editar a mano.
+export type OverlayId = "bloom" | "brillo_plastico" | "brillo_vidrio" | "cuadricula" | "grano_antiguo" | "halftone" | "lluvia_matrix" | "ninguno" | "papel" | "pixelado" | "polvo_tiza" | "scanlines" | "vineta";
+export type EstiloMotion = { nombre: string; paleta: { fondo: string; texto: string; acento: string }; tipografia: string; overlay: OverlayId; subs: "pop" | "tinta" | "comic" | "barra"; filtro: string };
+export const ESTILOS_MOTION: Record<string, EstiloMotion> = {
+  pixel_art: { nombre: "Pixel art", paleta: { fondo: "#1B1B3A", texto: "#F5F5F5", acento: "#FFCC00" }, tipografia: "Special Elite", overlay: "pixelado", subs: "barra", filtro: "" },
+  bloques_lego: { nombre: "Bloques de juguete / Estilo LEGO", paleta: { fondo: "#F4C20D", texto: "#1A1A1A", acento: "#D01012" }, tipografia: "Poppins", overlay: "brillo_plastico", subs: "pop", filtro: "" },
+  pizarra_tiza: { nombre: "Pizarra de tiza", paleta: { fondo: "#1F3A2E", texto: "#F4F1E8", acento: "#F7D774" }, tipografia: "Special Elite", overlay: "polvo_tiza", subs: "tinta", filtro: "contrast(1.05)" },
+  anos_30: { nombre: "Anos 30", paleta: { fondo: "#161616", texto: "#EDE6D3", acento: "#C9A24B" }, tipografia: "Lora", overlay: "grano_antiguo", subs: "tinta", filtro: "grayscale(1) contrast(1.1) sepia(0.15)" },
+  vidriera: { nombre: "Vidriera", paleta: { fondo: "#0E1A3A", texto: "#FFF4D6", acento: "#E0A526" }, tipografia: "Cinzel", overlay: "brillo_vidrio", subs: "barra", filtro: "" },
+  tinta_china: { nombre: "Tinta china", paleta: { fondo: "#F2EBDD", texto: "#161616", acento: "#B3242A" }, tipografia: "Lora", overlay: "papel", subs: "tinta", filtro: "" },
+  grabado_japones: { nombre: "Grabado japones", paleta: { fondo: "#E9DFC7", texto: "#1C2A4A", acento: "#B5352B" }, tipografia: "Lora", overlay: "papel", subs: "tinta", filtro: "" },
+  cine_mudo: { nombre: "Cine mudo", paleta: { fondo: "#0D0D0D", texto: "#EFEFEF", acento: "#CFCFCF" }, tipografia: "Special Elite", overlay: "grano_antiguo", subs: "barra", filtro: "grayscale(1) contrast(1.12)" },
+  cristal: { nombre: "Cristal", paleta: { fondo: "#0A1424", texto: "#EAF6FF", acento: "#7FDBFF" }, tipografia: "Montserrat", overlay: "brillo_vidrio", subs: "barra", filtro: "" },
+  comic: { nombre: "Comic", paleta: { fondo: "#FFF3C4", texto: "#111111", acento: "#E63946" }, tipografia: "Oswald", overlay: "halftone", subs: "comic", filtro: "" },
+  boceto_luminoso: { nombre: "Boceto luminoso", paleta: { fondo: "#070B14", texto: "#EAF3FF", acento: "#6EE7F9" }, tipografia: "Poppins", overlay: "bloom", subs: "barra", filtro: "" },
+  ps2: { nombre: "Estilo PS2", paleta: { fondo: "#1E2A3A", texto: "#E8E8E8", acento: "#8FD14F" }, tipografia: "Montserrat", overlay: "scanlines", subs: "barra", filtro: "" },
+  vector_plano: { nombre: "Vector plano", paleta: { fondo: "#FFF8EC", texto: "#1D2B53", acento: "#FF6B6B" }, tipografia: "Inter", overlay: "ninguno", subs: "barra", filtro: "" },
+  linea_minimalista: { nombre: "Linea minimalista", paleta: { fondo: "#FFFFFF", texto: "#111111", acento: "#FF5A36" }, tipografia: "Inter", overlay: "ninguno", subs: "barra", filtro: "" },
+  cgi: { nombre: "CGI", paleta: { fondo: "#101826", texto: "#F5F7FA", acento: "#FFB703" }, tipografia: "Poppins", overlay: "vineta", subs: "pop", filtro: "" },
+  explicativo_3d: { nombre: "3D explicativo", paleta: { fondo: "#EAF1FF", texto: "#1D2B53", acento: "#4F7CFF" }, tipografia: "Poppins", overlay: "ninguno", subs: "pop", filtro: "" },
+  holograma: { nombre: "Holograma", paleta: { fondo: "#03121F", texto: "#D9F8FF", acento: "#27E8FF" }, tipografia: "Montserrat", overlay: "scanlines", subs: "barra", filtro: "" },
+  neon_cyberpunk: { nombre: "Neon cyberpunk", paleta: { fondo: "#0A0716", texto: "#FDF6FF", acento: "#FF2E97" }, tipografia: "Oswald", overlay: "bloom", subs: "comic", filtro: "" },
+  papel_recortado: { nombre: "Papel recortado", paleta: { fondo: "#F6EFE2", texto: "#2B2B2B", acento: "#EF476F" }, tipografia: "Poppins", overlay: "papel", subs: "pop", filtro: "" },
+  isometrico: { nombre: "Isometrico", paleta: { fondo: "#E8F0FF", texto: "#1B2A4E", acento: "#FF9F1C" }, tipografia: "Inter", overlay: "ninguno", subs: "barra", filtro: "" },
+  plano_azul: { nombre: "Plano azul", paleta: { fondo: "#0B3D91", texto: "#EAF2FF", acento: "#9CC9FF" }, tipografia: "Special Elite", overlay: "cuadricula", subs: "barra", filtro: "" },
+  camara_termica: { nombre: "Camara termica", paleta: { fondo: "#12002B", texto: "#FFF1C2", acento: "#FF7A00" }, tipografia: "Montserrat", overlay: "scanlines", subs: "barra", filtro: "saturate(1.1)" },
+  anime: { nombre: "Anime", paleta: { fondo: "#FFEBD6", texto: "#1B1B2F", acento: "#FF5D8F" }, tipografia: "Poppins", overlay: "vineta", subs: "pop", filtro: "" },
+  matrix: { nombre: "Matrix", paleta: { fondo: "#000A03", texto: "#C8FFD2", acento: "#00FF41" }, tipografia: "Special Elite", overlay: "lluvia_matrix", subs: "barra", filtro: "" },
+  acuarela: { nombre: "Acuarela", paleta: { fondo: "#FBF6EE", texto: "#2F3E46", acento: "#E76F51" }, tipografia: "Lora", overlay: "papel", subs: "tinta", filtro: "" },
+  plastilina: { nombre: "Plastilina", paleta: { fondo: "#FFE9C7", texto: "#3B2A20", acento: "#3DA5D9" }, tipografia: "Poppins", overlay: "vineta", subs: "pop", filtro: "" },
+};
