@@ -1,0 +1,4 @@
+      <CamaraSigue frame={frame} fps={fps} W={W} H={H} zoom={e.camara?.zoom ?? 1.14} suavizado={e.camara?.suavizado ?? 0.6} puntos={puntos}>
+        {e.media ? <Img src={staticFile(e.media)} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", filter: est?.filtro || undefined, imageRendering: est?.overlay === "pixelado" ? "pixelated" : undefined }} /> : null}
+        {plan.map((p) => <ElementoMov key={p.el.id} plan={p} frame={frame} W={W} H={H} tema={tema} />)}
+      </CamaraSigue>
